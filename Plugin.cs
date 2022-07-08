@@ -72,6 +72,13 @@ namespace GorillaTagModTemplateProject
 		[ModdedGamemodeLeave]
 		public void OnLeave(string gamemode)
 		{
+			/* Turn off statment */
+
+			if(PlayerBody.useGravity == false)
+            {
+				PlayerBody.useGravity = true;
+			}
+
 			inRoom = false;
 		}
 	}
