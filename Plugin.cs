@@ -75,7 +75,7 @@ namespace GorillaTagModTemplateProject
 			/* Turn off statment */
 
 			if(PlayerBody.useGravity == false)
-            {
+            		{
 				PlayerBody.useGravity = true;
 			}
 
