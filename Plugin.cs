@@ -1,4 +1,4 @@
-﻿using BepInEx;
+using BepInEx;
 using GorillaLocomotion;
 using System;
 using UnityEngine;
@@ -42,14 +42,13 @@ namespace GorillaTagModTemplateProject
 
 		void Update()
 		{
-			Main();
 
 		}
 
 
 		void Main()
 		{
-			if (OVRInput.Get(OVRInput.Button.One))
+			if (OVRInput.Get(OVRInput.Button.Four))
 			{
 				if (PlayerBody.useGravity == true)
 				{
@@ -66,6 +65,7 @@ namespace GorillaTagModTemplateProject
 		[ModdedGamemodeJoin]
 		public void OnJoin(string gamemode)
 		{
+			Main();
 			inRoom = true;
 		}
 
