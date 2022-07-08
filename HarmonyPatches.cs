@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 using System.Reflection;
 using HarmonyLib;
 
-namespace GorillaTagModTemplateProject
+namespace NoMoreGravity
 {
 	/// <summary>
 	/// This class handles applying harmony patches to the game.
